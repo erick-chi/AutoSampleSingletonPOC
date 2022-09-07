@@ -1,14 +1,15 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using SingletonFramework.Browser;
 
 namespace SingletonFramework.PageObjects
 {
-    public class PracticeForm:Pages
+    public class PracticeForm : BasePage<PracticeForm>
     {
-        public PracticeForm(IWebDriver driver)
-        {
-            this.driver = driver;           
-        }
+        //public PracticeForm(IWebDriver driver)
+        //{
+        //    this.driver = driver;           
+        //}
         private void ClickCategoryType(string CategoryType) {
             var CategoryElement = CategoryCardsMenu.FindElement(By.XPath(Convert.ToChar(46) + Common.Selectors.CategoryType(CategoryType)));
             CategoryElement.Click();

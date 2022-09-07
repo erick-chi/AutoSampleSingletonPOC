@@ -1,29 +1,30 @@
 using SingletonFramework.PageObjects;
 using NUnit.Framework;
+using SingletonFramework.Browser;
 
 namespace SingletonTests
 {
-    public class COETests:Pages
+    public class COETests:BaseTest
     {
 
         [TestCase]
         public void HomePageExistenceValidation()
         {
-            Assert.IsTrue(HomePageObject(driver).IsHomePageDisplayed);
+            Assert.IsTrue(HomePage.Page.IsHomePageDisplayed);
         }
 
         [TestCase]
         public void ValidatingElementsArePresentOnHomePage()
         {
-            Assert.IsTrue(HomePageObject(driver).AreElements_Forms_Widgets_Present());
+            Assert.IsTrue(HomePage.Page.AreElements_Forms_Widgets_Present());
         }
 
         [TestCase]
         public void EnteredVSDisplayedDataValidation()
         {
-            PracticeFormObject(driver).GotToPracticeFormPage();
-            PracticeFormObject(driver).FillStudentsData();
-            Assert.IsTrue(PracticeFormObject(driver).CompareEnteredDataVsDisplayedData());
+            PracticeForm.Page.GotToPracticeFormPage();
+            PracticeForm.Page.FillStudentsData();
+            Assert.IsTrue(PracticeForm.Page.CompareEnteredDataVsDisplayedData());
         }
     }
 }
