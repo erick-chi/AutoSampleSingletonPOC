@@ -1,14 +1,15 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using SingletonFramework.Browser;
 
-namespace AssesmentFramework.PageObjects
+namespace SingletonFramework.PageObjects
 {
-    public class HomePage:Pages
+    public class HomePage : BasePage<HomePage>
     {
-        public HomePage(IWebDriver driver)
-        {
-            this.driver = driver;           
-        }
+        //public HomePage(IWebDriver driver)
+        //{
+        //    this.driver = driver;           
+        //}
         public bool AreElements_Forms_Widgets_Present() { 
             return IsCategoryTypeDisplayed(Common.Constants.CATEGORY_FORMS)
                 && IsCategoryTypeDisplayed(Common.Constants.CATEGORY_ELEMENTS)

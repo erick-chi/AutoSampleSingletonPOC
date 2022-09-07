@@ -1,4 +1,4 @@
-﻿namespace AssesmentFramework.Mapping
+﻿namespace SingletonFramework.Mapping
 {
     public class StudentMapping
     {

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssesmentFramework", "AssesmentFramework\AssesmentFramework.csproj", "{1CE83176-8A6F-42F6-BB52-419294E97EE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonFramework", "AssesmentFramework\SingletonFramework.csproj", "{1CE83176-8A6F-42F6-BB52-419294E97EE9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssesmentTests", "AssesmentTests\AssesmentTests.csproj", "{5431E10E-DD8D-4421-B51E-2837F2AAD4C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonTests", "AssesmentTests\SingletonTests.csproj", "{5431E10E-DD8D-4421-B51E-2837F2AAD4C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{F7112F3C-8005-4C06-95FE-F5B70864C768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{F7112F3C-8005-4C06-95FE-F5B70864C768}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

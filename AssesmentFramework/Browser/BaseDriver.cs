@@ -4,23 +4,25 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
 
-namespace AssesmentFramework.Browser
+namespace SingletonFramework.Browser
 {
-    public class TestBase
+    public class BaseDriver
     {
-        protected IWebDriver driver;
+        protected static IWebDriver driver = null;
 
 
-        [SetUp]
-        public void Setup() {
+        public void CreateDriver() {
             driver = new ChromeDriver(Environment.CurrentDirectory);
             driver.Manage().Window.Maximize();
             GoToTestURL();
         }
 
-        [TearDown]
-        public void Cleanup() { 
-            driver.Quit();
+        public void QuitDriver() {
+            if (driver != null)
+            {
+                driver.Quit();
+                driver = null;
+            }
         }
 
         public void GoToTestURL() {
