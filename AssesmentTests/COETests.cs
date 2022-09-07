@@ -1,7 +1,7 @@
-using AssesmentFramework.PageObjects;
+using SingletonFramework.PageObjects;
 using NUnit.Framework;
 
-namespace AssesmentTests
+namespace SingletonTests
 {
     public class COETests:Pages
     {

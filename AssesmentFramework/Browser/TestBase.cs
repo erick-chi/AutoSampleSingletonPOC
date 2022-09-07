@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
 
-namespace AssesmentFramework.Browser
+namespace SingletonFramework.Browser
 {
     public class TestBase
     {

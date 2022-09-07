@@ -1,7 +1,7 @@
-﻿using AssesmentFramework.Browser;
+﻿using SingletonFramework.Browser;
 using OpenQA.Selenium;
 
-namespace AssesmentFramework.PageObjects
+namespace SingletonFramework.PageObjects
 {
     public class Pages:TestBase
     {

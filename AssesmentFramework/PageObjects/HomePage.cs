@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace AssesmentFramework.PageObjects
+namespace SingletonFramework.PageObjects
 {
     public class HomePage:Pages
     {
