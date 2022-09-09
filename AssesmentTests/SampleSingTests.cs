@@ -4,7 +4,7 @@ using SingletonFramework.Browser;
 
 namespace SingletonTests
 {
-    public class COETests:BaseTest
+    public class SampleSingTests:BaseTest
     {
 
         [TestCase]

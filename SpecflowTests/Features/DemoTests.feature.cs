@@ -75,11 +75,11 @@ namespace SpecflowTests.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("CheckHomePageIsDisplayed")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
+        [NUnit.Framework.CategoryAttribute("HomePage")]
         public virtual void CheckHomePageIsDisplayed()
         {
             string[] tagsOfScenario = new string[] {
-                    "tag1"};
+                    "HomePage"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CheckHomePageIsDisplayed", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
